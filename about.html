@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<style>
+    
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.intro {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Information Cards */
+.about-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h2 {
+    color: #007bff;
+}
+
+.about-card p,
+.about-card li {
+    line-height: 1.8;
+}
+
+.about-card ul {
+    padding-left: 25px;
+}
+
+/* Back Button */
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 25px auto;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 0 8px;
+    }
+
+    .about-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>MyWebsite</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="about-container">
+
+        <h1>About Our Registration Form</h1>
+
+        <p class="intro">
+            Welcome to our website! Our registration form provides
+            a simple and user-friendly way to enter your personal details.
+        </p>
+
+        <div class="about-card">
+            <h2>Our Purpose</h2>
+            <p>
+                The purpose of this form is to collect basic user
+                information such as name, email, password, and gender
+                through a simple interface.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h2>Our Features</h2>
+            <ul>
+                <li>Simple and clean design</li>
+                <li>User-friendly interface</li>
+                <li>Required field validation</li>
+                <li>Responsive styling</li>
+                <li>Easy navigation between pages</li>
+            </ul>
+        </div>
+
+        <div class="about-card" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@example.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            Back to Registration
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
